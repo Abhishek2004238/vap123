@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/web.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>website
+    </title>
+</head> 
+
+<body>
+    <nav class="navbar ">
+        <ul class="navlist ">
+            <div class="logo">
+            <img src="img/logo.png" alt="logo">
+            </div>
+            <li><a href="web.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li id="schedule"><a href="#schedule">schedule</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li id="login"><a href="#login">login</a></li>
+
+        </ul>
+       
+        
+    </nav>
+    
+    <section class=" background first-section" >
+        <div class=" ">
+        <h3>Your Health, Your Schedule: Virtual Consultations with Trusted Doctors</h3>
+
+        <div><p class="ab">book appointment, Have a video Consultation,and get your questions answered securely</p></div>
+        <DIv>
+            <a href="sign.html"><input type="button" value="get started" id="get"></a>
+           <a href="about.html"> <input type="button" value="learn more" id="get"></a>
+        </DIv>
+        </div>
+    </section>
+    <div class="secondhalf">
+        <div class="asd">
+            <div class="cross" id="cross"> <button type="submit"><i class='bx bx-x' ></i></button></div>
+            <form class="fgh">
+            <h3 class="scokdx"> Schedule appointment</h3>
+            <div class="btm" >
+                <input type="button"  value="appointment date">
+                    <i class='bx bxs-calendar'></i> 
+                </input>
+            </div>
+            <div class="btm" >
+                <input type="button" value="Video Consultation">
+                    <i class='bx bxs-video'></i> 
+                </input>
+            </div>
+            <div class="btm" >
+                <input type="button"  value="Message Securely">
+                    <i class='bx bxs-message-square-dots'></i> 
+                </input>
+            </div>
+           
+       
+            </form>
+        </div>
+    </div>
+      
+            
+    </div>
+    <div class="abhi">
+        <div class="popup">
+           
+            <form action="">
+                
+                <div class="close"> <button type="submit"><i class='bx bx-x' id="close"></i></button></div>
+                <a id="as">login</a>
+                <div class="input-box">
+                    <a id="aw"> Username:</a>
+                    <input type="text" placeholder="username" >
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <a id="aw"> password:</a>
+                    <input type="password" placeholder="password" >
+                    <i class='bx bxs-lock'></i>
+                </div>
+                <div class="remember-me">
+                    <label><input type="checkbox">Remind me</label>
+                    <a href="#">forgot password<a>
+                </div>
+                <div class="login">
+                    <label> <button type="submit" class="btn">login</label>
+                </div>
+                <div class="resistor">
+                    <p> don't have account?
+                        <a href="sign.html"> resistor </a>
+                    </p>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("login").addEventListener("click",function(){
+            document.querySelector(".abhi").style.display="flex";
+           
+
+        } )
+        document.getElementById("close").addEventListener("click",function(){
+            document.querySelector(".abhi").style.display="none";
+          
+        })
+        document.getElementById("schedule").addEventListener("click",function(){
+            document.querySelector(".secondhalf").style.display="flex";
+        })
+        document.getElementById("cross").addEventListener("click",function(){
+            document.querySelector(".secondhalf").style.display="none";
+          
+        })
+
+    </script>
+   
+    
+</body>
+</html>

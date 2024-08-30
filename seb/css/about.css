@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Background{
+   background-image:url(/img/BACKGROUND.JPG) ;
+ 
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 25px;
+   padding-left: 500px;
+
+}
+.btn {
+    text-align: center;
+justify-items: center;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    
+}
+.btn button{
+    width: 200px;
+}
+.btn :hover{
+    background-color: aquamarine;
+    
+
+}
